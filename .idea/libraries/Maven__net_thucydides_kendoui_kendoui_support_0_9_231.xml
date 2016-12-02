@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.thucydides.kendoui:kendoui-support:0.9.231">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/thucydides/kendoui/kendoui-support/0.9.231/kendoui-support-0.9.231.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/thucydides/kendoui/kendoui-support/0.9.231/kendoui-support-0.9.231-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/thucydides/kendoui/kendoui-support/0.9.231/kendoui-support-0.9.231-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2621936203">
+    <data-source source="LOCAL" name="Data Source" uuid="9aab8f22-d236-4f2a-8d79-c85d49f6cc38">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:[pmt/pmt]@ngendb01:1521:test1</jdbc-url>
+      <default-dialect>Oracle</default-dialect>
+      <libraries>
+        <library>
+          <url>jar://$PROJECT_DIR$/ojdbc6-11.2.0.3.jar!/</url>
+        </library>
+        <library>
+          <url>file://$PROJECT_DIR$/oracle-driver-license.txt</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Data Source - Dev" uuid="c8178bc4-0bf6-4687-adeb-e688a8029634">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:[pmt/pmt]@ngendb01:1521:dev1</jdbc-url>
+      <libraries>
+        <library>
+          <url>jar://$PROJECT_DIR$/ojdbc6-11.2.0.3.jar!/</url>
+        </library>
+        <library>
+          <url>file://$PROJECT_DIR$/oracle-driver-license.txt</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
