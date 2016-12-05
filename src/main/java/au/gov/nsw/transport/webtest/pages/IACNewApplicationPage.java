@@ -12,7 +12,7 @@ import org.openqa.selenium.Keys;
  * Created by GumpuR on 29/11/2016.
  */
 
-@DefaultUrl("https://tfnsw-iac-3.pegacloud.com/ApplyCEC/ApplyCEC.html")
+@DefaultUrl("https://tfnsw-iac-1.pegacloud.com/ApplyCEC/ApplyCEC.html")
 
 public class IACNewApplicationPage extends PageObject {
 
@@ -166,6 +166,7 @@ public class IACNewApplicationPage extends PageObject {
 //        waitForTextToAppear("Application details");
 //        waitForRenderedElements(By.partialLinkText("Application details"));
         getDriver().manage().window().maximize();
+//        waitForRenderedElements(By.tagName("iframe"));
         getDriver().switchTo().frame(getDriver().findElement(By.tagName("iframe")));
         waitFor(2000).milliseconds();
 //        waitForRenderedElements(By.id("EntitlementType"));

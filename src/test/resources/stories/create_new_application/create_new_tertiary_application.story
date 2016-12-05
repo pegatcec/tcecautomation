@@ -10,7 +10,7 @@ Given I am a <entitlementType>
 When I submit the cec application with <uniName> <concessionID>
 And I submit personal details with <firstName> <lastName> <emailID> <phone> <mobile>
 And I submit residential details with <addressLine1> <suburb><postCode>
-Then I should be see the outcome message
+Then I should see the outcome message
 
 
 

@@ -64,7 +64,7 @@ public class CreateNewApplicationSteps {
     public void submitResidentialDetails(String addressLine1, String suburb, String postCode){
         IACUserSteps.submitResidentialDetails(addressLine1,suburb,postCode);
     }
-    @Then("I should be see the outcome message")
+    @Then("I should see the outcome message")
     public void shouldBeAbleToGetOutcomeMessage(){
         IACUserSteps.shouldBeAbleToGetOutcomeMessage();
     }
