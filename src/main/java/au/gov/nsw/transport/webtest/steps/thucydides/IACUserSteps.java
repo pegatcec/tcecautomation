@@ -35,4 +35,8 @@ public class IACUserSteps {
     public void submitResidentialDetails(String addressLine1, String suburb, String postCode) {
         IACApplicationPage.submitResidentialDetails(addressLine1,suburb,postCode);
     }
+
+    public void shouldBeAbleToGetOutcomeMessage() {
+        IACApplicationPage.shouldBeAbleToGetOutcomeMessage();
+    }
 }

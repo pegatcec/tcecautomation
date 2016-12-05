@@ -3,6 +3,7 @@ package au.gov.nsw.transport.webtest.steps;
 import au.gov.nsw.transport.webtest.steps.thucydides.IACUserSteps;
 import net.thucydides.core.annotations.Steps;
 import org.jbehave.core.annotations.Given;
+import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.jbehave.core.model.ExamplesTable;
 
@@ -62,6 +63,10 @@ public class CreateNewApplicationSteps {
     @When("I submit residential details with <addressLine1> <suburb><postCode>")
     public void submitResidentialDetails(String addressLine1, String suburb, String postCode){
         IACUserSteps.submitResidentialDetails(addressLine1,suburb,postCode);
+    }
+    @Then("I should be see the outcome message")
+    public void shouldBeAbleToGetOutcomeMessage(){
+        IACUserSteps.shouldBeAbleToGetOutcomeMessage();
     }
 
 }

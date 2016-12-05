@@ -78,6 +78,9 @@ public class IACNewApplicationPage extends PageObject {
     @FindBy (xpath = "//div[text()='Finish']")
     WebElementFacade finishButton;
 
+    @FindBy(xpath = "//input[@id='pyWorkPagepyWorkPartyApplicantIsPostalAddressSameYes'][@value='Yes']")
+            WebElementFacade isPostalAddressSameYes;
+
 
 
     String SegmentType_JS = "Job Seeker/Approved Centrelink customer";
@@ -160,8 +163,12 @@ public class IACNewApplicationPage extends PageObject {
     }
 
     public void selectEntitlementType(String entitlementType) {
+//        waitForTextToAppear("Application details");
+//        waitForRenderedElements(By.partialLinkText("Application details"));
         getDriver().manage().window().maximize();
         getDriver().switchTo().frame(getDriver().findElement(By.tagName("iframe")));
+        waitFor(2000).milliseconds();
+//        waitForRenderedElements(By.id("EntitlementType"));
         entitlementTypeDropDown.selectByVisibleText(entitlementType);
     }
 
@@ -203,9 +210,21 @@ public class IACNewApplicationPage extends PageObject {
 
         PostCode.sendKeys(postCode);
         waitFor(300).milliseconds();
+        isPostalAddressSameYes.click();
 
-        getDriver().findElement(By.xpath("//input[@id='pyWorkPagepyWorkPartyApplicantIsPostalAddressSameYes'][@value='Yes']")).click();
+//        getDriver().findElement(By.xpath("//input[@id='pyWorkPagepyWorkPartyApplicantIsPostalAddressSameYes'][@value='Yes']")).click();
         waitFor(3000).milliseconds();
+        nextButton.click();
+        waitFor(300).milliseconds();
+        isNonStandardisedAddress.click();
+        nextButton.click();
+        waitForRenderedElementsToBePresent(By.id("pyWorkPageAgreeTermsAndConditions"));
+    }
+
+    public void shouldBeAbleToGetOutcomeMessage() {
+        termsAndConditions.click();
+        finishButton.click();
+        waitFor(300).milliseconds();
     }
 }
 
